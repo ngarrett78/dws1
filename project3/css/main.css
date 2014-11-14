@@ -85,6 +85,7 @@ h3 {
 
 h1:before, h2:before {
 	content:url('../images/oars.jpg');
+	padding-right: 10px;
 }
 
 
