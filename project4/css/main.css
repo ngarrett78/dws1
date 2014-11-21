@@ -36,48 +36,51 @@ body {
 	float:left;
 }
 
-/** Full Width Section  **/
-#full-width {
-	width:100%;
-	clear:both;
-}
+
 
 /* table styling */
-table {
-	width: 100%;
-	border-bottom: 1px solid #cbd2d8;
-	border-top: 1px solid #f1f8fe;
-	text-shadow: 1px 1px 1px #fff;
-}
-th, td {
-	padding: 7px 10px 10px 10px;
-}
 
+
+table {
+	font-size:12px;
+	color:#333333;
+	width:100%;
+	border-width: 1px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
 th {
+	font-size:16px;
+	background-color:#119dcc;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #333333;
+	text-align:left;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 90%;
-	border-bottom: 2px solid #111111;
-	border-top: 1px solid #999;
-	text-align: left;
-	background-color:#119DCC;
 	color:#fff;
+	font-weight: normal;
+
 }
 
 td {
-	word-wrap: break-word;
+	font-size:12px;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #729ea5;
 }
-tr.even {
-	background-color: #efefef;
-}
-tr:hover {
+
+tr:hover, .odd:hover {
 	background-color: #2881B4;
 	color:#fff;
 }
 
-.money {
-	text-align:right;
+.odd {
+	background:#efefef;
 }
+
+
 
 	/******         SIDEBAR    **********/
 aside {
@@ -239,7 +242,18 @@ textarea {
 	width: 100%;
 }
 
+#commentbox {
+	float:left;
+	width:200px;
+}
+
+
 /** button **/
+#submitbutton {
+	clear: both;
+	float: left;
+}
+
 button,
 a.button,
 input[type="reset"],

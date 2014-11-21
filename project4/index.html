@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+	<!-- script to add coloring to odd classes in tables  -->
+	<script language="javascript"> $("tr:odd").addClass("odd"); </script>
+
 </head>
 <body>
 <!-- Primary content begins -->
@@ -70,6 +74,7 @@
 		</aside>
 		
 	<!-- Full width section to fit table  -->
+
 		<section id="full-width"> 
 			<table>
 				<tr>					
@@ -87,7 +92,7 @@
 					<td> Intense and violent rapids with steep drops, waterfalls, massive waves and extremely constricted channels. Rapids may require “critical” maneuvering above dangerous hazards. Prior Class IV experience is required. In some cases participants must pass a physical fitness/swimming test administered by our guides at the river.</td>
 
 				</tr>
-				<tr>
+				<tr class="odd">
 					<td>Ideal for: Children aged four and older, first-timers, seniors</td>
 					<td>Ideal for: Children aged four and older, first-timers, all adults.</td>
 					<td>Ideal for: Children aged seven and older, beginners to intermediates looking for manageable thrills.</td>
@@ -128,10 +133,10 @@
 					</p>
 						
 						<p id="addcomments">Add additional comments:</p>
-						<textarea name="Comments" id="comments">					
+						<p id="commentbox"><textarea name="Comments" id="comments">	</textarea></p>
 						</textarea>		
 					
-						<input type="submit" value="submit" id="submit"/>
+						<span id="submitbutton"><input type="submit" value="submit" id="submit"/></span>
 					
 				</fieldset>
 			</form>
